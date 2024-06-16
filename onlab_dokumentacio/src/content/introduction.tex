@@ -1,0 +1,17 @@
+%----------------------------------------------------------------------------
+\chapter{\bevezetes}
+%----------------------------------------------------------------------------
+
+A feladat során egy olyan videó átméretező IP blokk fejlesztését kezdtem meg, amely tetszőleges méretről tetszőleges méretre tud átméretezni videófolyamot. A videó átméretezésnek több alkalmazása is lehet, pl retro konzolok képeinek upscalelése nagyobb felbontásra, de egy érdekesebb felhasználása az a mesterséges intelligenciára épülő képfeldolgozásban van, ugyanis sok ilyen modell csak bizonyos méretű képeket/videókat képes bemenetként elfogadni, és ha pl a kameránk nem ilyen videófolyamot készít, akkor az mindenképpen preprocessingre szorul.
+
+Azért választottam ezt a feladatot, hogy jobban megismerkedjek az FPGA-kal, és a digitális tervezéssel, hiszen eddigi tanulmányaim során nem találkoztam még velük. Éppen ezért a félév első felében főleg ismerkedtem a verilog nyelvvel, és a digitális tervezéssel, közben irodalomkutatást végeztem. A félév második felében pedig elkezdtem az implementációt.
+
+A félév során azt a célt tűztem ki, hogy képeket legyen képes a modul tetszőleges méretűre átméretezni. Azzal, hogy a bemenő képfolyam milyen módon érkezik meg az FPGA-ba, jelenleg nem foglalkoztam.
+
+Első lépének irodalomkutatást végeztem képek átméretezéséről. Itt különböző átméretezési algoritmusokat ismertem meg, melyek közül a bilineáris transzformációval, és a polyphase transzformációval foglalkoztam részletesebben.
+ 
+Második lépésnek megpróbáltam egy egyszerűbb bilineáris algoritmust megvalósítani, amely tetszőleges méretről tetszőleges méretűre tud képeket átméretezni.
+
+Harmadik lépésnek létrehoztam egy sorbuffer modult testbenchel, amely a megfelelő sorokat képes eltárolni egy bejövő folyamból, és a megfelelő pixeleket tudja adagolni az átméretező algoritmusnak.
+
+Végezetül ezeket integráltam és test benchet hoztam létre nekik.

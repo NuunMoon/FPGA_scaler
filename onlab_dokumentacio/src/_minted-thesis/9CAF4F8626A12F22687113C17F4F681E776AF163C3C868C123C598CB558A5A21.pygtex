@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{wire}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{DATA\PYGZus{}WIDTH}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{n}{ramDataOutA}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mh}{2}\PYG{o}{**}\PYG{n}{BUFFER\PYGZus{}SIZE}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{];}
+\PYG{k+kt}{wire}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{DATA\PYGZus{}WIDTH}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{n}{ramDataOutB}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mh}{2}\PYG{o}{**}\PYG{n}{BUFFER\PYGZus{}SIZE}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{];}
+\PYG{c+c1}{//generating the RAM blocks}
+\PYG{k}{generate}
+\PYG{k}{genvar}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{;}
+\PYG{k}{for}\PYG{p}{(}\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mh}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mh}{2}\PYG{o}{**}\PYG{n}{BUFFER\PYGZus{}SIZE}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mh}{1}\PYG{p}{)}
+\PYG{k}{begin}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{ram\PYGZus{}generate}
+\PYG{n}{ram}\PYG{+w}{ }\PYG{p}{\PYGZsh{}(}
+\PYG{p}{.}\PYG{n}{DATA\PYGZus{}WIDTH}\PYG{p}{(}\PYG{n}{DATA\PYGZus{}WIDTH}\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{ADDRESS\PYGZus{}WIDTH}\PYG{p}{(}\PYG{n}{ORIG\PYGZus{}X\PYGZus{}SIZE}\PYG{p}{)}
+\PYG{p}{)}\PYG{+w}{ }\PYG{n}{ram\PYGZus{}inst\PYGZus{}i}\PYG{p}{(}
+\PYG{p}{.}\PYG{n}{clk}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{clk}\PYG{+w}{ }\PYG{p}{),}
+
+\PYG{c+c1}{//Port A is written to as well as read from.}
+\PYG{c+c1}{//When writing, this port cannot be read from.}
+\PYG{p}{.}\PYG{n}{addrA}\PYG{p}{(}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{writeSelect}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{forceRead}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{writeEnable}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n}{requestCol}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{readAddress}\PYG{+w}{ }\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{dataA}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{writeData}\PYG{+w}{ }\PYG{p}{),}\PYG{+w}{													}
+\PYG{p}{.}\PYG{n}{weA}\PYG{p}{(}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{writeSelect}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{forceRead}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n}{writeEnable}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mh}{1}\PYG{l+m+mb}{\PYGZsq{}b0}\PYG{+w}{ }\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{outA}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{ramDataOutA}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{),}
+
+\PYG{c+c1}{//portB is only read from, we are reading the next pixel}
+\PYG{p}{.}\PYG{n}{addrB}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{readAddress}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mh}{1}\PYG{l+m+mb}{\PYGZsq{}b1}\PYG{+w}{ }\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{dataB}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{writeData}\PYG{+w}{ }\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{weB}\PYG{p}{(}\PYG{+w}{ }\PYG{l+m+mh}{1}\PYG{l+m+mb}{\PYGZsq{}b0}\PYG{+w}{ }\PYG{p}{),}
+\PYG{p}{.}\PYG{n}{outB}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{ramDataOutB}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{)}
+\PYG{p}{);}
+\PYG{k}{end}
+\PYG{k}{endgenerate}
+
+\PYG{c+c1}{//Select which ram to read from}
+\PYG{k+kt}{wire}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{BUFFER\PYGZus{}SIZE}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{]}\PYG{+w}{	}\PYG{n}{readSelect0}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{readSelect}\PYG{p}{;}
+\PYG{k+kt}{wire}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{BUFFER\PYGZus{}SIZE}\PYG{o}{\PYGZhy{}}\PYG{l+m+mh}{1}\PYG{o}{:}\PYG{l+m+mh}{0}\PYG{p}{]}\PYG{+w}{	}\PYG{n}{readSelect1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{readSelect}\PYG{o}{+}\PYG{l+m+mh}{1}\PYG{p}{;}
+
+\PYG{c+c1}{//Steer the output data to the right ports}
+\PYG{k}{assign}\PYG{+w}{ }\PYG{n}{readData00}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ramDataOutA}\PYG{p}{[}\PYG{n}{readSelect0}\PYG{p}{];}
+\PYG{k}{assign}\PYG{+w}{ }\PYG{n}{readData01}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ramDataOutB}\PYG{p}{[}\PYG{n}{readSelect0}\PYG{p}{];}
+\PYG{k}{assign}\PYG{+w}{ }\PYG{n}{readData10}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ramDataOutA}\PYG{p}{[}\PYG{n}{readSelect1}\PYG{p}{];}
+\PYG{k}{assign}\PYG{+w}{ }\PYG{n}{readData11}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ramDataOutB}\PYG{p}{[}\PYG{n}{readSelect1}\PYG{p}{];}
+\end{Verbatim}

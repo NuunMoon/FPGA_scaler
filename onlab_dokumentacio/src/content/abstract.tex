@@ -1,0 +1,26 @@
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\selecthungarian
+
+%----------------------------------------------------------------------------
+% Abstract in Hungarian
+%----------------------------------------------------------------------------
+\chapter*{Feladatkiírás}\addcontentsline{toc}{chapter}{Kivonat}
+
+Az átméretezés igénye számos videó feldolgozó folyamatban merül fel igényként, s mivel a videó feldolgozás FPGA-ban tipikusan jól  megvalósítható feladat, így ebben a környezetben is szükség van az ezt a feladatot ellátó egységre.
+
+Ugyan mindkét nagy FPGA gyártó (Intel, Xilinx) rendelkezik ehhez gyári megoldással, azonban ezek az IP magok meglehetősen drágák, és utóbbi gyártó esetén ráadásul meglehetősen rosszul működik. A feladat célja egy saját, általánosan használható átméretező IP kifejlesztése.
+
+A cél egy olyan blokk kifejlesztése, amely testzőleges felbontásról képes bármilyen másik tetszőleges felbontásra skálázni magasabb fokszámű szűrők használatával, azaz jó minőségben.
+
+
+
+\vfill
+\cleardoublepage
+
+\selectthesislanguage
+
+\newcounter{romanPage}
+\setcounter{romanPage}{\value{page}}
+\stepcounter{romanPage}

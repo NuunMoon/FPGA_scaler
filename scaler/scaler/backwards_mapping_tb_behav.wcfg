@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bilinear_filter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bilinear_filter_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="248.570 ns"></ZoomStartTime>
+      <ZoomEndTime time="327.321 ns"></ZoomEndTime>
+      <Cursor1Time time="283.570 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="302"></NameColumnWidth>
+      <ValueColumnWidth column_width="258"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="87" />
+   <wvobject fp_name="/bilinear_filter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px00" type="array">
+      <obj_property name="ElementShortName">px00[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px00[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px01" type="array">
+      <obj_property name="ElementShortName">px01[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px01[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px10" type="array">
+      <obj_property name="ElementShortName">px10[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px10[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px11" type="array">
+      <obj_property name="ElementShortName">px11[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px11[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px00XCoord" type="array">
+      <obj_property name="ElementShortName">px00XCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">px00XCoord[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/px00YCoord" type="array">
+      <obj_property name="ElementShortName">px00YCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">px00YCoord[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/outPxXCoord" type="array">
+      <obj_property name="ElementShortName">outPxXCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxXCoord[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/outPxYCoord" type="array">
+      <obj_property name="ElementShortName">outPxYCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxYCoord[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/outPx" type="array">
+      <obj_property name="ElementShortName">outPx[23:0]</obj_property>
+      <obj_property name="ObjectShortName">outPx[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/validOutput" type="logic">
+      <obj_property name="ElementShortName">validOutput</obj_property>
+      <obj_property name="ObjectShortName">validOutput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/doneImage" type="logic">
+      <obj_property name="ElementShortName">doneImage</obj_property>
+      <obj_property name="ObjectShortName">doneImage</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/test" type="array">
+      <obj_property name="ElementShortName">test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">test[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/readyForRead" type="logic">
+      <obj_property name="ElementShortName">readyForRead</obj_property>
+      <obj_property name="ObjectShortName">readyForRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/doneProcessing" type="logic">
+      <obj_property name="ElementShortName">doneProcessing</obj_property>
+      <obj_property name="ObjectShortName">doneProcessing</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/counter" type="array">
+      <obj_property name="ElementShortName">counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/CHANNELS" type="array">
+      <obj_property name="ElementShortName">CHANNELS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHANNELS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/COLOR_DEPTH" type="array">
+      <obj_property name="ElementShortName">COLOR_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COLOR_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/ORIG_X_SIZE" type="array">
+      <obj_property name="ElementShortName">ORIG_X_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIG_X_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/ORIG_Y_SIZE" type="array">
+      <obj_property name="ElementShortName">ORIG_Y_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIG_Y_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/TF_X_SIZE" type="array">
+      <obj_property name="ElementShortName">TF_X_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TF_X_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/TF_Y_SIZE" type="array">
+      <obj_property name="ElementShortName">TF_Y_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TF_Y_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/FRACT_BITS" type="array">
+      <obj_property name="ElementShortName">FRACT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRACT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/FIXED_POINT_BITS" type="array">
+      <obj_property name="ElementShortName">FIXED_POINT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIXED_POINT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/INT_BITS" type="array">
+      <obj_property name="ElementShortName">INT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/ORIGRESX" type="array">
+      <obj_property name="ElementShortName">ORIGRESX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIGRESX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/ORIGRESY" type="array">
+      <obj_property name="ElementShortName">ORIGRESY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIGRESY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/TFRESX" type="array">
+      <obj_property name="ElementShortName">TFRESX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TFRESX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/TFRESY" type="array">
+      <obj_property name="ElementShortName">TFRESY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TFRESY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/origResolutionX" type="array">
+      <obj_property name="ElementShortName">origResolutionX[10:0]</obj_property>
+      <obj_property name="ObjectShortName">origResolutionX[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/origResolutionY" type="array">
+      <obj_property name="ElementShortName">origResolutionY[10:0]</obj_property>
+      <obj_property name="ObjectShortName">origResolutionY[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/tfResolutionX" type="array">
+      <obj_property name="ElementShortName">tfResolutionX[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tfResolutionX[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/tfResolutionY" type="array">
+      <obj_property name="ElementShortName">tfResolutionY[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tfResolutionY[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/xScale" type="array">
+      <obj_property name="ElementShortName">xScale[17:0]</obj_property>
+      <obj_property name="ObjectShortName">xScale[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/yScale" type="array">
+      <obj_property name="ElementShortName">yScale[17:0]</obj_property>
+      <obj_property name="ObjectShortName">yScale[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px00XCoord" type="array">
+      <obj_property name="ElementShortName">px00XCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">px00XCoord[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px00YCoord" type="array">
+      <obj_property name="ElementShortName">px00YCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">px00YCoord[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/readyForRead" type="logic">
+      <obj_property name="ElementShortName">readyForRead</obj_property>
+      <obj_property name="ObjectShortName">readyForRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px00" type="array">
+      <obj_property name="ElementShortName">px00[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px00[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px01" type="array">
+      <obj_property name="ElementShortName">px01[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px01[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px10" type="array">
+      <obj_property name="ElementShortName">px10[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px10[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/px11" type="array">
+      <obj_property name="ElementShortName">px11[23:0]</obj_property>
+      <obj_property name="ObjectShortName">px11[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/outPxXCoord" type="array">
+      <obj_property name="ElementShortName">outPxXCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxXCoord[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/outPxYCoord" type="array">
+      <obj_property name="ElementShortName">outPxYCoord[10:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxYCoord[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/outPx" type="array">
+      <obj_property name="ElementShortName">outPx[23:0]</obj_property>
+      <obj_property name="ObjectShortName">outPx[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/validOutput" type="logic">
+      <obj_property name="ElementShortName">validOutput</obj_property>
+      <obj_property name="ObjectShortName">validOutput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/doneProcessing" type="logic">
+      <obj_property name="ElementShortName">doneProcessing</obj_property>
+      <obj_property name="ObjectShortName">doneProcessing</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/doneImage" type="logic">
+      <obj_property name="ElementShortName">doneImage</obj_property>
+      <obj_property name="ObjectShortName">doneImage</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/xTfCnt" type="array">
+      <obj_property name="ElementShortName">xTfCnt[10:0]</obj_property>
+      <obj_property name="ObjectShortName">xTfCnt[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/yTfCnt" type="array">
+      <obj_property name="ElementShortName">yTfCnt[10:0]</obj_property>
+      <obj_property name="ObjectShortName">yTfCnt[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/xOrigCnt" type="array">
+      <obj_property name="ElementShortName">xOrigCnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">xOrigCnt[20:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/yOrigCnt" type="array">
+      <obj_property name="ElementShortName">yOrigCnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">yOrigCnt[20:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/xOrigCntFracSh" type="array">
+      <obj_property name="ElementShortName">xOrigCntFracSh[9:0]</obj_property>
+      <obj_property name="ObjectShortName">xOrigCntFracSh[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/yOrigCntFracSh" type="array">
+      <obj_property name="ElementShortName">yOrigCntFracSh[19:0]</obj_property>
+      <obj_property name="ObjectShortName">yOrigCntFracSh[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/xBlend" type="array">
+      <obj_property name="ElementShortName">xBlend[9:0]</obj_property>
+      <obj_property name="ObjectShortName">xBlend[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/yBlend" type="array">
+      <obj_property name="ElementShortName">yBlend[9:0]</obj_property>
+      <obj_property name="ObjectShortName">yBlend[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/outPxXCoordSh" type="array">
+      <obj_property name="ElementShortName">outPxXCoordSh[32:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxXCoordSh[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/outPxYCoordSh" type="array">
+      <obj_property name="ElementShortName">outPxYCoordSh[32:0]</obj_property>
+      <obj_property name="ObjectShortName">outPxYCoordSh[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/upperBilinRes" type="array">
+      <obj_property name="ElementShortName">upperBilinRes[2:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">upperBilinRes[2:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/lowerBilinRes" type="array">
+      <obj_property name="ElementShortName">lowerBilinRes[2:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">lowerBilinRes[2:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/middleBilinRes" type="array">
+      <obj_property name="ElementShortName">middleBilinRes[2:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">middleBilinRes[2:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/coeffOne" type="array">
+      <obj_property name="ElementShortName">coeffOne[10:0]</obj_property>
+      <obj_property name="ObjectShortName">coeffOne[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/validInput" type="array">
+      <obj_property name="ElementShortName">validInput[2:0]</obj_property>
+      <obj_property name="ObjectShortName">validInput[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/CHANNELS" type="array">
+      <obj_property name="ElementShortName">CHANNELS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHANNELS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/COLOR_DEPTH" type="array">
+      <obj_property name="ElementShortName">COLOR_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COLOR_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/ORIG_X_SIZE" type="array">
+      <obj_property name="ElementShortName">ORIG_X_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIG_X_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/ORIG_Y_SIZE" type="array">
+      <obj_property name="ElementShortName">ORIG_Y_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIG_Y_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/TF_X_SIZE" type="array">
+      <obj_property name="ElementShortName">TF_X_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TF_X_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/TF_Y_SIZE" type="array">
+      <obj_property name="ElementShortName">TF_Y_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TF_Y_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/FRACT_BITS" type="array">
+      <obj_property name="ElementShortName">FRACT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FRACT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/FIXED_POINT_BITS" type="array">
+      <obj_property name="ElementShortName">FIXED_POINT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FIXED_POINT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/INT_BITS" type="array">
+      <obj_property name="ElementShortName">INT_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INT_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/COEFF_BITS" type="array">
+      <obj_property name="ElementShortName">COEFF_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFF_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/ORIGRESX" type="array">
+      <obj_property name="ElementShortName">ORIGRESX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIGRESX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/ORIGRESY" type="array">
+      <obj_property name="ElementShortName">ORIGRESY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ORIGRESY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/TFRESX" type="array">
+      <obj_property name="ElementShortName">TFRESX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TFRESX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/TFRESY" type="array">
+      <obj_property name="ElementShortName">TFRESY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TFRESY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/DELAY" type="array">
+      <obj_property name="ElementShortName">DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/START" type="array">
+      <obj_property name="ElementShortName">START[31:0]</obj_property>
+      <obj_property name="ObjectShortName">START[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/PROCESSING" type="array">
+      <obj_property name="ElementShortName">PROCESSING[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PROCESSING[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/DONEROW" type="array">
+      <obj_property name="ElementShortName">DONEROW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DONEROW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bilinear_filter_tb/bilin_uut/DONEIMAGE" type="array">
+      <obj_property name="ElementShortName">DONEIMAGE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DONEIMAGE[31:0]</obj_property>
+   </wvobject>
+</wave_config>
