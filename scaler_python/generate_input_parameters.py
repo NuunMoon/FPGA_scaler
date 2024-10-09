@@ -28,15 +28,15 @@ def divide_to_fixed_point(num1, num2):
 
 
 # X
-num1 = int(512-1)
-num2 = int(800)  # CHANGE ME
+num1 = int(1280-1)
+num2 = int(1920)  # CHANGE ME
 
 result = divide_to_fixed_point(num1, num2)
 print("Fixed-point representation of the division result:", result)
 
 # Y
-num1 = int(512-1)
-num2 = int(800)  # CHANGE ME
+num1 = int(720-1)
+num2 = int(1080)  # CHANGE ME
 
 result = divide_to_fixed_point(num1, num2)
 print("Fixed-point representation of the division result:", result)
