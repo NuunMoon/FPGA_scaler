@@ -233,11 +233,9 @@ end
                 mult1[k] <= px1[COLOR_DEPTH*(k+1)-1:COLOR_DEPTH*k] * currentBank[1];
                 mult2[k] <= px2[COLOR_DEPTH*(k+1)-1:COLOR_DEPTH*k] * currentBank[2];
                 mult3[k] <= px3[COLOR_DEPTH*(k+1)-1:COLOR_DEPTH*k] * currentBank[3];
-                multres[k] <= mult0[k] + mult1[k] + mult2[k] + mult3[k]
+                multres[k] <= mult0[k] + mult1[k] + mult2[k] + mult3[k];
 
             end
-            
-            
         end   
     endgenerate
 
